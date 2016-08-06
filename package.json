@@ -1,0 +1,21 @@
+{
+  "name": "cooker-command-init",
+  "version": "0.0.2",
+  "description": "cooker init project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fecooker",
+    "fis3",
+    "init"
+  ],
+  "author": "codering",
+  "license": "MIT",
+  "dependencies": {
+    "empty-dir": "^0.2.1",
+    "through2": "^2.0.1",
+    "vinyl-fs": "^2.4.3"
+  }
+}
