@@ -59,7 +59,3 @@ function template(dest) {
     cb();
   });
 }
-
-function simplifyFilename(file) {
-  return file.replace(process.cwd(), '.');
-}
