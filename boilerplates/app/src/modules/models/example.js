@@ -8,17 +8,25 @@ export default {
   },
 
   subscriptions: [
-    function(dispatch) {
+    function ({ dispatch, history }) {
+      history.listen(location => {
+        if (location.pathname === '/example') {
+          dispatch({
+            type: 'example/query',
+            payload: location.query
+          });
+        }
+      });
     },
   ],
 
   effects: {
-    *['examples/query']({ payload }) {
+    *['example/query']({ payload }) {
     },
   },
 
   reducers: {
-    ['examples/save'](state, action) {
+    ['example/save'](state, action) {
       return { ...state, ...action.payload };
     },
   },
