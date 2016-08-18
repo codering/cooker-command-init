@@ -1,6 +1,6 @@
 {
   "name": "cooker-command-init",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "cooker init project",
   "main": "index.js",
   "scripts": {
